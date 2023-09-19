@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=18.16.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "16": "^0.0.2",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.7",
     "@reduxjs/toolkit": "^1.9.5",
@@ -19,6 +23,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "lodash": "^4.17.21",
+    "node": "^16.20.2",
     "nodemon": "^3.0.1",
     "random-words": "^2.0.0",
     "react": "^18.2.0",
