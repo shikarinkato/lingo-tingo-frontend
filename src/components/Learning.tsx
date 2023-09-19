@@ -1,4 +1,5 @@
-import { ArrowBack, VolumeUp } from "@mui/icons-material";
+import VolumeUp from "../images/volume.png";
+import ArrrowBack from "../images/icons8-left-arrow-24.png";
 import { useState, useEffect, useRef } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { fetchAudio, translateWords } from "../utils/Features";
@@ -66,7 +67,7 @@ const Learning = () => {
           count === 0 ? () => navigate("/") : () => setCount((prev) => prev - 1)
         }
       >
-        <ArrowBack style={{ color: "#14b8a6" }} />
+        <img className="h-[30px] w-[25px] cursor-pointer" src={ArrrowBack} alt="" />
       </span>
       <span>Learning Made Easy</span>
       <div className="flex flex-row text-3xl gap-x-4 items-center font-semibold">
@@ -75,7 +76,7 @@ const Learning = () => {
         </h1>
         <h1> : {words[count]?.meaning}</h1>
         <button onClick={audioHandler}>
-          <VolumeUp style={{ color: "#14b8a6" }} />
+          <img className="h-[30px]" src={VolumeUp} alt="" />
         </button>
       </div>
       <button
