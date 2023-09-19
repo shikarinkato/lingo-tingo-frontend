@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
 import { saveResult } from "../redux/Slices";
 
 const Quiz = () => {
   const [result, setResult] = useState<string[]>([]);
   const [count, setCount] = useState<number>(0);
-  const [enable, setEnable] = useState<boolean>(false);
   const [ans, setAns] = useState<string>("");
 
   const navigate = useNavigate();

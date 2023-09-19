@@ -1,9 +1,9 @@
-import { Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import { useSelector } from "react-redux";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import { lazy, Suspense, useState } from "react";
 import Loader from "./components/Loader";
 import Login from "./components/Login";
-import { useSelector } from "react-redux";
 
 const Home = lazy(() => import("./components/Home"));
 const Learning = lazy(() => import("./components/Learning"));
